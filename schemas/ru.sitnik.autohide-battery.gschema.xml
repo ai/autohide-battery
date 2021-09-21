@@ -5,5 +5,9 @@
       <summary>Minimum battery level to hide icon</summary>
       <default>100</default>
     </key>
+    <key name="active-on-lockscreen" type="b">
+      <summary>Is the extension active on lockscreen</summary>
+      <default>false</default>
+    </key>
   </schema>
 </schemalist>

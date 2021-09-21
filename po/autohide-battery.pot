@@ -24,3 +24,7 @@ msgstr ""
 #: prefs.js:33
 msgid "If you changed maximum charging level to extend battery life"
 msgstr ""
+
+#: prefs.js:44
+msgid "Keep extension active on lockscreen"
+msgstr ""
