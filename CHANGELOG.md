@@ -1,5 +1,8 @@
 # Change Log
 
+## 34
+* Fixed GNOME 43 support.
+
 ## 33
 * Fixed Spanish translation (by gallegonovato).
 
