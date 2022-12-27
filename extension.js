@@ -4,6 +4,20 @@ const UPower = imports.gi.UPowerGlib
 
 let batteryWatching, settingsWatching, settings, disabled
 
+function getBattery(callback) {
+  if (Main.panel.statusArea.quickSettings) {
+    let system = Main.panel.statusArea.quickSettings._system
+    if (system._systemItem._powerToggle) {
+      callback(system._systemItem._powerToggle._proxy, system)
+    }
+  } else {
+    let menu = Main.panel.statusArea.aggregateMenu
+    if (menu && menu._power) {
+      callback(menu._power._proxy, menu._power)
+    }
+  }
+}
+
 function show() {
   getBattery((proxy, icon) => {
     icon.show()
@@ -33,20 +47,6 @@ function update() {
   })
 }
 
-function getBattery(callback) {
-  if (Main.panel.statusArea.quickSettings) {
-    let system = Main.panel.statusArea.quickSettings._system
-    if (system._systemItem._powerToggle) {
-      callback(system._systemItem._powerToggle._proxy, system)
-    }
-  } else {
-    let menu = Main.panel.statusArea.aggregateMenu
-    if (menu && menu._power) {
-      callback(menu._power._proxy, menu._power)
-    }
-  }
-}
-
 function init() {
   disabled = true
 }
@@ -60,6 +60,7 @@ function enable() {
       batteryWatching = proxy.connect('g-properties-changed', update)
     })
     update()
+    setTimeout(update, 500)
   }
 }
 
