@@ -1,5 +1,8 @@
 # Change Log
 
+## 35
+* Fixed GNOME API usage.
+
 ## 34
 * Fixed GNOME 43 support.
 
