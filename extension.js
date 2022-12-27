@@ -1,8 +1,9 @@
 const ExtensionUtils = imports.misc.extensionUtils
 const Main = imports.ui.main
 const UPower = imports.gi.UPowerGlib
+const GLib = imports.gi.GLib
 
-let batteryWatching, settingsWatching, settings, disabled
+let batteryWatching, settingsWatching, settings, disabled, initTimeout
 
 function getBattery(callback) {
   if (Main.panel.statusArea.quickSettings) {
@@ -54,26 +55,40 @@ function init() {
 function enable() {
   if (disabled) {
     disabled = false
+
     settings = ExtensionUtils.getSettings('ru.sitnik.autohide-battery')
     settingsWatching = settings.connect('changed::hide-on', update)
+
     getBattery(proxy => {
       batteryWatching = proxy.connect('g-properties-changed', update)
     })
+
     update()
-    initTimeout = setTimeout(update, 500)
+    initTimeout = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 1, () => {
+      update()
+      return GLib.SOURCE_CONTINUE
+    })
   }
 }
 
 function disable() {
   if (Main.sessionMode.currentMode !== 'unlock-dialog') {
     disabled = true
+
     if (settings) {
       settings.disconnect(settingsWatching)
       settings = null
     }
+
+    if (initTimeout) {
+      GLib.Source.remove(initTimeout)
+      initTimeout = null
+    }
+
     getBattery(proxy => {
       proxy.disconnect(batteryWatching)
     })
+
     show()
   }
 }
