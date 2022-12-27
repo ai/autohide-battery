@@ -60,14 +60,17 @@ function enable() {
       batteryWatching = proxy.connect('g-properties-changed', update)
     })
     update()
-    setTimeout(update, 500)
+    initTimeout = setTimeout(update, 500)
   }
 }
 
 function disable() {
   if (Main.sessionMode.currentMode !== 'unlock-dialog') {
     disabled = true
-    if (settings) settings.disconnect(settingsWatching)
+    if (settings) {
+      settings.disconnect(settingsWatching)
+      settings = null
+    }
     getBattery(proxy => {
       proxy.disconnect(batteryWatching)
     })
