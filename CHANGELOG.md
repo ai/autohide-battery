@@ -1,5 +1,8 @@
 # Change Log
 
+## 36
+* Added Indonesian translation (by Reza Almanda).
+
 ## 35
 * Fixed GNOME API usage.
 
