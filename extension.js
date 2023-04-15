@@ -56,7 +56,9 @@ function enable() {
   if (disabled) {
     disabled = false
 
-    settings = ExtensionUtils.getSettings('ru.sitnik.autohide-battery')
+    settings = ExtensionUtils.getSettings(
+      'org.gnome.shell.extensions.autohide-battery'
+    )
     settingsWatching = settings.connect('changed::hide-on', update)
 
     getBattery(proxy => {

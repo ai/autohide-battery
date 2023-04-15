@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema id="ru.sitnik.autohide-battery" path="/ru/sitnik/autohide-battery/">
+  <schema id="org.gnome.shell.extensions.autohide-battery" path="/org/gnome/shell/extensions/autohide-battery/">
     <key name="hide-on" type="i">
       <summary>Minimum battery level to hide icon</summary>
       <default>100</default>

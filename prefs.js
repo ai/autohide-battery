@@ -9,7 +9,9 @@ function init() {
 }
 
 function buildPrefsWidget() {
-  let settings = ExtensionUtils.getSettings('ru.sitnik.autohide-battery')
+  let settings = ExtensionUtils.getSettings(
+    'org.gnome.shell.extensions.autohide-battery'
+  )
 
   let grid = new Gtk.Grid({
     margin_top: 24,
