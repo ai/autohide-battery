@@ -1,5 +1,8 @@
 # Change Log
 
+## 38
+* Fixed GSettings name.
+
 ## 37
 * Added GNOME 44 support.
 
