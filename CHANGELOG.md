@@ -1,5 +1,8 @@
 # Change Log
 
+## 39
+* Fixed GSettings schema file.
+
 ## 38
 * Fixed GSettings name.
 
