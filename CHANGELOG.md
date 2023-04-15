@@ -1,5 +1,8 @@
 # Change Log
 
+## 37
+* Added GNOME 44 support.
+
 ## 36
 * Added Indonesian translation (by Reza Almanda).
 
