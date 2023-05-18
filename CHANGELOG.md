@@ -1,5 +1,8 @@
 # Change Log
 
+## 40
+* Added Turkish translation (by Sabri Ünal).
+
 ## 39
 * Fixed GSettings schema file.
 
