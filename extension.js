@@ -3,7 +3,7 @@ const Main = imports.ui.main
 const UPower = imports.gi.UPowerGlib
 const GLib = imports.gi.GLib
 
-let batteryWatching, settingsWatching, settings, disabled, initTimeout
+let batteryWatching, settingsWatching, settings, initTimeout
 
 function getBattery(callback) {
   if (Main.panel.statusArea.quickSettings) {
@@ -48,34 +48,26 @@ function update() {
   })
 }
 
-function init() {
-  disabled = true
-}
+function init() {}
 
 function enable() {
-  if (disabled) {
-    disabled = false
+  settings = ExtensionUtils.getSettings(
+    'org.gnome.shell.extensions.autohide-battery'
+  )
+  settingsWatching = settings.connect('changed::hide-on', update)
 
-    settings = ExtensionUtils.getSettings(
-      'org.gnome.shell.extensions.autohide-battery'
-    )
-    settingsWatching = settings.connect('changed::hide-on', update)
+  getBattery(proxy => {
+    batteryWatching = proxy.connect('g-properties-changed', update)
+  })
 
-    getBattery(proxy => {
-      batteryWatching = proxy.connect('g-properties-changed', update)
-    })
-
+  update()
+  initTimeout = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 1, () => {
     update()
-    initTimeout = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 1, () => {
-      update()
-      return GLib.SOURCE_CONTINUE
-    })
-  }
+    return GLib.SOURCE_CONTINUE
+  })
 }
 
 function disable() {
-  disabled = true
-
   if (settings) {
     settings.disconnect(settingsWatching)
     settings = null
