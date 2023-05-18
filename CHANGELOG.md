@@ -1,5 +1,8 @@
 # Change Log
 
+## 41
+* Reverted lock screen support to pass new extension’s rules.
+
 ## 40
 * Added Turkish translation (by Sabri Ünal).
 
