@@ -74,23 +74,21 @@ function enable() {
 }
 
 function disable() {
-  if (Main.sessionMode.currentMode !== 'unlock-dialog') {
-    disabled = true
+  disabled = true
 
-    if (settings) {
-      settings.disconnect(settingsWatching)
-      settings = null
-    }
-
-    if (initTimeout) {
-      GLib.Source.remove(initTimeout)
-      initTimeout = null
-    }
-
-    getBattery(proxy => {
-      proxy.disconnect(batteryWatching)
-    })
-
-    show()
+  if (settings) {
+    settings.disconnect(settingsWatching)
+    settings = null
   }
+
+  if (initTimeout) {
+    GLib.Source.remove(initTimeout)
+    initTimeout = null
+  }
+
+  getBattery(proxy => {
+    proxy.disconnect(batteryWatching)
+  })
+
+  show()
 }
