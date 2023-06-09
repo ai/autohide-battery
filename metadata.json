@@ -5,5 +5,8 @@
   "uuid": "autohide-battery@sitnik.ru",
   "shell-version": ["40", "41", "42", "43", "44"],
   "gettext-domain": "autohide-battery",
+  "donations": {
+    "github": "ai"
+  },
   "version": 41
 }
