@@ -54,16 +54,9 @@ export default class AutohideBatteryExtension extends Extension {
   }
 
   getBattery(callback) {
-    if (panel.statusArea.quickSettings) {
-      let system = panel.statusArea.quickSettings._system
-      if (system._systemItem._powerToggle) {
-        callback(system._systemItem._powerToggle._proxy, system)
-      }
-    } else {
-      let menu = panel.statusArea.aggregateMenu
-      if (menu && menu._power) {
-        callback(menu._power._proxy, menu._power)
-      }
+    let system = panel.statusArea.quickSettings._system
+    if (system._systemItem._powerToggle) {
+      callback(system._systemItem._powerToggle._proxy, system)
     }
   }
 
