@@ -1,5 +1,8 @@
 # Change Log
 
+## 42
+* Moved to GNOME 45.
+
 ## 41
 * Reverted lock screen support to pass new extension’s rules.
 
