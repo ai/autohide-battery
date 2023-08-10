@@ -12,6 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "@logux/eslint-config": "^50.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
     "eslint": "^8.42.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.27.5",
@@ -28,17 +29,9 @@
     "trailingComma": "none"
   },
   "eslintConfig": {
-    "extends": "@logux/eslint-config",
+    "extends": "@logux/eslint-config/esm",
     "globals": {
       "imports": false
-    },
-    "rules": {
-      "no-unused-vars": [
-        "error",
-        {
-          "varsIgnorePattern": "^(init|enable|disable|buildPrefsWidget)$"
-        }
-      ]
     },
     "env": {
       "node": false

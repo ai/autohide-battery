@@ -1,86 +1,98 @@
-const ExtensionUtils = imports.misc.extensionUtils
-const Main = imports.ui.main
-const UPower = imports.gi.UPowerGlib
-const GLib = imports.gi.GLib
+import { Extension } from 'resource:///org/gnome/shell/extensions/extension.js'
+import { panel } from 'resource:///org/gnome/shell/ui/main.js'
+import UPower from 'gi://UPowerGlib'
+import GLib from 'gi://GLib'
 
-let batteryWatching, settingsWatching, settings, initTimeout
+export default class AutohideBatteryExtension extends Extension {
+  batteryWatching = null
 
-function getBattery(callback) {
-  if (Main.panel.statusArea.quickSettings) {
-    let system = Main.panel.statusArea.quickSettings._system
-    if (system._systemItem._powerToggle) {
-      callback(system._systemItem._powerToggle._proxy, system)
-    }
-  } else {
-    let menu = Main.panel.statusArea.aggregateMenu
-    if (menu && menu._power) {
-      callback(menu._power._proxy, menu._power)
-    }
-  }
-}
+  settingsWatching = null
 
-function show() {
-  getBattery((proxy, icon) => {
-    icon.show()
-  })
-}
+  initTimeout = null
 
-function hide() {
-  getBattery((proxy, icon) => {
-    icon.hide()
-  })
-}
+  settings = null
 
-function update() {
-  let hideOn = settings.get_int('hide-on')
-  getBattery(proxy => {
-    let isDischarging = proxy.State === UPower.DeviceState.DISCHARGING
-    let isFullyCharged = proxy.State === UPower.DeviceState.FULLY_CHARGED
-    if (proxy.Type !== UPower.DeviceKind.BATTERY) {
-      show()
-    } else if (isFullyCharged) {
-      hide()
-    } else if (proxy.Percentage >= hideOn && !isDischarging) {
-      hide()
+  getBattery(callback) {
+    if (panel.statusArea.quickSettings) {
+      let system = panel.statusArea.quickSettings._system
+      if (system._systemItem._powerToggle) {
+        callback(system._systemItem._powerToggle._proxy, system)
+      }
     } else {
-      show()
+      let menu = panel.statusArea.aggregateMenu
+      if (menu && menu._power) {
+        callback(menu._power._proxy, menu._power)
+      }
     }
-  })
-}
-
-function init() {}
-
-function enable() {
-  settings = ExtensionUtils.getSettings(
-    'org.gnome.shell.extensions.autohide-battery'
-  )
-  settingsWatching = settings.connect('changed::hide-on', update)
-
-  getBattery(proxy => {
-    batteryWatching = proxy.connect('g-properties-changed', update)
-  })
-
-  update()
-  initTimeout = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 1, () => {
-    update()
-    return GLib.SOURCE_CONTINUE
-  })
-}
-
-function disable() {
-  if (settings) {
-    settings.disconnect(settingsWatching)
-    settings = null
   }
 
-  if (initTimeout) {
-    GLib.Source.remove(initTimeout)
-    initTimeout = null
+  show() {
+    this.getBattery((proxy, icon) => {
+      icon.show()
+    })
   }
 
-  getBattery(proxy => {
-    proxy.disconnect(batteryWatching)
-  })
+  hide() {
+    this.getBattery((proxy, icon) => {
+      icon.hide()
+    })
+  }
 
-  show()
+  update() {
+    let hideOn = this.settings.get_int('hide-on')
+    this.getBattery(proxy => {
+      let isDischarging = proxy.State === UPower.DeviceState.DISCHARGING
+      let isFullyCharged = proxy.State === UPower.DeviceState.FULLY_CHARGED
+      if (proxy.Type !== UPower.DeviceKind.BATTERY) {
+        this.show()
+      } else if (isFullyCharged) {
+        this.hide()
+      } else if (proxy.Percentage >= hideOn && !isDischarging) {
+        this.hide()
+      } else {
+        this.show()
+      }
+    })
+  }
+
+  enable() {
+    this.settings = this.getSettings()
+    this.settingsWatching = this.settings.connect('changed::hide-on', () => {
+      this.update()
+    })
+
+    this.getBattery(proxy => {
+      this.batteryWatching = proxy.connect('g-properties-changed', () => {
+        this.update()
+      })
+    })
+
+    this.update()
+    this.initTimeout = GLib.timeout_add_seconds(
+      GLib.PRIORITY_DEFAULT,
+      1,
+      () => {
+        this.update()
+        return GLib.SOURCE_CONTINUE
+      }
+    )
+  }
+
+  disable() {
+    if (this.settings) {
+      this.settings.disconnect(this.settingsWatching)
+      this.settings = null
+    }
+
+    if (this.initTimeout) {
+      GLib.Source.remove(this.initTimeout)
+      this.initTimeout = null
+    }
+
+    this.getBattery(proxy => {
+      proxy.disconnect(this.batteryWatching)
+    })
+
+    this.show()
+  }
 }
