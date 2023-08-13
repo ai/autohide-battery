@@ -1,5 +1,8 @@
 # Change Log
 
+## 43
+* Moved to `libadwaita` in preferences.
+
 ## 42
 * Moved to GNOME 45.
 
