@@ -4,6 +4,7 @@
   "url": "https://github.com/ai/autohide-battery",
   "uuid": "autohide-battery@sitnik.ru",
   "shell-version": ["45"],
+  "settings-schema": "org.gnome.shell.extensions.autohide-battery",
   "gettext-domain": "autohide-battery",
   "donations": {
     "github": "ai"
