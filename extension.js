@@ -75,13 +75,13 @@ export default class AutohideBatteryExtension extends Extension {
   update() {
     let hideOn = this.settings.get_int('hide-on')
     this.getBattery(proxy => {
-      let isDischarging = proxy.State === UPower.DeviceState.DISCHARGING
+      let isPendingCharge = proxy.State === UPower.DeviceState.PENDING_CHARGE
       let isFullyCharged = proxy.State === UPower.DeviceState.FULLY_CHARGED
       if (proxy.Type !== UPower.DeviceKind.BATTERY) {
         this.show()
       } else if (isFullyCharged) {
         this.hide()
-      } else if (proxy.Percentage >= hideOn && !isDischarging) {
+      } else if (proxy.Percentage >= hideOn && isPendingCharge) {
         this.hide()
       } else {
         this.show()
