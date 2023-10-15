@@ -1,5 +1,8 @@
 # Change Log
 
+## 44
+* Added Central Kurdish translation (by Hoshmand M. Qadir).
+
 ## 43
 * Moved to `libadwaita` in preferences.
 
