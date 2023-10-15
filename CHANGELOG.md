@@ -1,5 +1,8 @@
 # Change Log
 
+## 45
+* Better detection for better safety state.
+
 ## 44
 * Added Central Kurdish translation (by Hoshmand M. Qadir).
 
