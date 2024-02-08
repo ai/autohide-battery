@@ -1,5 +1,9 @@
 # Change Log
 
+## 46
+* Hide icon on any battery state if battery level more than specified by user.
+* Added GNOME 46 support.
+
 ## 45
 * Better detection for better safety state.
 
