@@ -1,5 +1,8 @@
 # Change Log
 
+## 47
+* Added Hindi translation (by Scrambled777).
+
 ## 46
 * Hide icon on any battery state if battery level more than specified by user.
 * Added GNOME 46 support.
