@@ -1,5 +1,8 @@
 # Change Log
 
+## 48
+* Always show icon on discharging state (by Suvan Banerjee).
+
 ## 47
 * Added Hindi translation (by Scrambled777).
 
