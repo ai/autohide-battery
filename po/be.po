@@ -20,11 +20,19 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.8.1-dev\n"
 
-#: prefs.js:20
-msgid "Hide on battery level above"
-msgstr "Схаваць іконку пры зарадзе больш за"
-
-#: prefs.js:33
+#: prefs.js:27
 msgid "If you changed maximum charging level to extend battery life"
 msgstr ""
 "Калі вы абмежавалі ўзровень зарада для падаўжэння тэрміну службы батарэі"
+
+#: prefs.js:29
+msgid "Hide on battery level above"
+msgstr "Схаваць іконку пры зарадзе больш за"
+
+#: prefs.js:43
+msgid "For laptops often jumping between charging and discharging"
+msgstr ""
+
+#: prefs.js:45
+msgid "Hide battery even on discharge if the level is above"
+msgstr ""

@@ -19,10 +19,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.8.1-dev\n"
 
-#: prefs.js:20
+#: prefs.js:27
+msgid "If you changed maximum charging level to extend battery life"
+msgstr "Hvis du endret maksimal ladningsnivå for å utvide batterilevetiden"
+
+#: prefs.js:29
 msgid "Hide on battery level above"
 msgstr "Skjul på batterinivå over"
 
-#: prefs.js:33
-msgid "If you changed maximum charging level to extend battery life"
-msgstr "Hvis du endret maksimal ladningsnivå for å utvide batterilevetiden"
+#: prefs.js:43
+msgid "For laptops often jumping between charging and discharging"
+msgstr ""
+
+#: prefs.js:45
+msgid "Hide battery even on discharge if the level is above"
+msgstr ""

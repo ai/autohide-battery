@@ -19,12 +19,20 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.16-dev\n"
 
-#: prefs.js:20
-msgid "Hide on battery level above"
-msgstr "Sembunyikan pada level baterai di atas"
-
-#: prefs.js:33
+#: prefs.js:27
 msgid "If you changed maximum charging level to extend battery life"
 msgstr ""
 "Jika Anda mengubah tingkat pengisian daya maksimum untuk memperpanjang masa "
 "pakai baterai"
+
+#: prefs.js:29
+msgid "Hide on battery level above"
+msgstr "Sembunyikan pada level baterai di atas"
+
+#: prefs.js:43
+msgid "For laptops often jumping between charging and discharging"
+msgstr ""
+
+#: prefs.js:45
+msgid "Hide battery even on discharge if the level is above"
+msgstr ""
