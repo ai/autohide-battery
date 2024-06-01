@@ -1,5 +1,8 @@
 # Change Log
 
+## 49
+* Added support for laptops often switching between charging and discharging.
+
 ## 48
 * Always show icon on discharging state (by Suvan Banerjee).
 
