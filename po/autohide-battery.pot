@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-05 18:11-0400\n"
+"POT-Creation-Date: 2024-06-01 21:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: prefs.js:20
+#: prefs.js:27
+msgid "If you changed maximum charging level to extend battery life"
+msgstr ""
+
+#: prefs.js:29
 msgid "Hide on battery level above"
 msgstr ""
 
-#: prefs.js:33
-msgid "If you changed maximum charging level to extend battery life"
+#: prefs.js:43
+msgid "For laptops often jumping between charging and discharging"
+msgstr ""
+
+#: prefs.js:45
+msgid "Hide battery even on discharge if the level is above"
 msgstr ""

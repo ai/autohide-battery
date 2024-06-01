@@ -16,7 +16,7 @@ export default class AutohideBatteryPreferences extends ExtensionPreferences {
     let group = new Adw.PreferencesGroup()
     page.add(group)
 
-    let row = new Adw.SpinRow({
+    let level = new Adw.SpinRow({
       adjustment: new Gtk.Adjustment({
         'lower': 0,
         'step-increment': 1,
@@ -28,13 +28,29 @@ export default class AutohideBatteryPreferences extends ExtensionPreferences {
       ),
       title: _('Hide on battery level above')
     })
-    group.add(row)
+    group.add(level)
 
-    row.connect('changed', () => {
-      settings.set_int('hide-on', row.get_value())
+    level.connect('changed', () => {
+      settings.set_int('hide-on', level.get_value())
     })
     settings.connect('changed::hide-on', () => {
-      row.set_value(settings.get_int('hide-on'))
+      level.set_value(settings.get_int('hide-on'))
+    })
+
+    let always = new Adw.SwitchRow({
+      active: settings.get_boolean('hide-always'),
+      subtitle: _(
+        'For laptops often jumping between charging and discharging'
+      ),
+      title: _('Hide battery even on discharge if the level is above')
+    })
+    group.add(always)
+
+    always.connect('notify::active', () => {
+      settings.set_boolean('hide-always', always.get_active())
+    })
+    settings.connect('changed::hide-always', () => {
+      always.set_active(settings.get_boolean('hide-always'))
     })
   }
 }

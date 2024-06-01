@@ -17,10 +17,19 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: prefs.js:20
+#: prefs.js:27
+msgid "If you changed maximum charging level to extend battery life"
+msgstr "Если вы ограничили уровень заряда для продления срока службы батареи"
+
+#: prefs.js:29
 msgid "Hide on battery level above"
 msgstr "Скрывать иконку при заряде больше"
 
-#: prefs.js:33
-msgid "If you changed maximum charging level to extend battery life"
-msgstr "Если вы ограничили уровень заряда для продления срока службы батареи"
+#: prefs.js:43
+msgid "For laptops often jumping between charging and discharging"
+msgstr "Если ноутбук часто переключается между зарядкой и разрядкой"
+
+#: prefs.js:45
+msgid "Hide battery even on discharge if the level is above"
+msgstr "Скрывать даже при разряде если заряд больше"
+

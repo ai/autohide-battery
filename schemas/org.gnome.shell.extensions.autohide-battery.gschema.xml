@@ -5,5 +5,9 @@
       <summary>Minimum battery level to hide icon</summary>
       <default>100</default>
     </key>
+    <key name="hide-always" type="b">
+      <summary>Hide icon on any battery state</summary>
+      <default>false</default>
+    </key>
   </schema>
 </schemalist>
