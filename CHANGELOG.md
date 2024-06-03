@@ -1,5 +1,10 @@
 # Change Log
 
+## 50
+* Updated Spanish translation (by gallegonovato).
+* Updated Polish translation (by Eryk Michalak).
+* Updated Hindi translation (by Scrambled777).
+
 ## 49
 * Added support for laptops often switching between charging and discharging.
 
