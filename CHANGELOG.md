@@ -1,5 +1,8 @@
 # Change Log
 
+## 51
+* Updated German translation (by Lacey Anaya).
+
 ## 50
 * Updated Spanish translation (by gallegonovato).
 * Updated Polish translation (by Eryk Michalak).
