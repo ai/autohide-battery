@@ -1,5 +1,9 @@
 # Change Log
 
+## 52
+* Updated Turkish translation (by Sabri Ünal).
+* Updated Dutch translation (by Heimen Stoffels).
+
 ## 51
 * Updated German translation (by Lacey Anaya).
 
