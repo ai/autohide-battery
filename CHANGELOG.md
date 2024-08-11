@@ -1,5 +1,8 @@
 # Change Log
 
+## 53
+* Updated Simplified Chinese translation (by 杨鹏).
+
 ## 52
 * Updated Turkish translation (by Sabri Ünal).
 * Updated Dutch translation (by Heimen Stoffels).
