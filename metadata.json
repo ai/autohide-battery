@@ -3,7 +3,7 @@
   "description": "Hide battery icon in top panel, if battery is fully charged and AC is connected",
   "url": "https://github.com/ai/autohide-battery",
   "uuid": "autohide-battery@sitnik.ru",
-  "shell-version": ["45", "46"],
+  "shell-version": ["45", "46", "47"],
   "settings-schema": "org.gnome.shell.extensions.autohide-battery",
   "gettext-domain": "autohide-battery",
   "donations": {
