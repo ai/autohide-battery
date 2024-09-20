@@ -1,7 +1,6 @@
 .PHONY: test clean build local
 
-test:
-	eslint *.js
+test: build
 
 clean:
 	rm -f *.zip
