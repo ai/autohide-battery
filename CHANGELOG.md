@@ -1,5 +1,8 @@
 # Change Log
 
+## 54
+* Added Tamil translation (by தமிழ்நேரம்).
+
 ## 53
 * Updated Simplified Chinese translation (by 杨鹏).
 
