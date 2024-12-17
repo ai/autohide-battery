@@ -1,5 +1,8 @@
 # Change Log
 
+## 55
+* Updated Ukrainian translation (by Maxim Gorpinic).
+
 ## 54
 * Added Tamil translation (by தமிழ்நேரம்).
 
