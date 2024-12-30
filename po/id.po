@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-05 18:11-0400\n"
-"PO-Revision-Date: 2023-02-19 23:40+0000\n"
+"PO-Revision-Date: 2024-12-30 14:00+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/"
 "autohide-battery/settings/id/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.16-dev\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: prefs.js:27
 msgid "If you changed maximum charging level to extend battery life"
@@ -32,7 +32,8 @@ msgstr "Sembunyikan pada level baterai di atas"
 #: prefs.js:43
 msgid "For laptops often jumping between charging and discharging"
 msgstr ""
+"Untuk laptop yang sering berpindah-pindah antara pengisian daya dan pemakaian"
 
 #: prefs.js:45
 msgid "Hide battery even on discharge if the level is above"
-msgstr ""
+msgstr "Sembunyikan baterai bahkan saat pengosongan jika levelnya di atas"
