@@ -1,5 +1,9 @@
 # Change Log
 
+## 56
+* Added GNOME 48 support (by Nathaniel Russell).
+* Added Indonesian translation (by Reza Almanda).
+
 ## 55
 * Updated Ukrainian translation (by Maxim Gorpinic).
 
