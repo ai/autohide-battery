@@ -8,26 +8,30 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 21:16+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-30 17:49+0000\n"
+"Last-Translator: xuars <yago.rana.gayoso@gmail.com>\n"
+"Language-Team: Galician <https://hosted.weblate.org/projects/"
+"autohide-battery/settings/gl/>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: prefs.js:27
 msgid "If you changed maximum charging level to extend battery life"
 msgstr ""
+"Se cambiaches o nivel máximo de carga para extender a vida útil da batería"
 
 #: prefs.js:29
 msgid "Hide on battery level above"
-msgstr ""
+msgstr "Ocultar no nivel de batería superior a"
 
 #: prefs.js:43
 msgid "For laptops often jumping between charging and discharging"
-msgstr ""
+msgstr "Para portátiles que frecuentemente cambian entre cargarse e descargarse"
 
 #: prefs.js:45
 msgid "Hide battery even on discharge if the level is above"
-msgstr ""
+msgstr "Ocultar batería incluso en descarga se o nivel é superior a"
