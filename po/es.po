@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-05 18:11-0400\n"
-"PO-Revision-Date: 2024-06-03 14:09+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2025-04-30 17:49+0000\n"
+"Last-Translator: xuars <yago.rana.gayoso@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/autohide-battery/"
 "settings/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: prefs.js:27
 msgid "If you changed maximum charging level to extend battery life"
@@ -26,7 +26,7 @@ msgstr ""
 
 #: prefs.js:29
 msgid "Hide on battery level above"
-msgstr "Ocultar en el nivel de batería superior"
+msgstr "Ocultar en el nivel de batería superior a"
 
 #: prefs.js:43
 msgid "For laptops often jumping between charging and discharging"
