@@ -7,12 +7,12 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-05 18:11-0400\n"
+"POT-Creation-Date: 2024-06-01 21:16+0200\n"
 "PO-Revision-Date: 2025-04-30 17:49+0000\n"
 "Last-Translator: xuars <yago.rana.gayoso@gmail.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/autohide-battery/"
-"settings/es/>\n"
-"Language: es\n"
+"Language-Team: Galician <https://hosted.weblate.org/projects/"
+"autohide-battery/settings/gl/>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,16 +22,16 @@ msgstr ""
 #: prefs.js:27
 msgid "If you changed maximum charging level to extend battery life"
 msgstr ""
-"Si has cambiado el nivel máximo de carga para alargar la vida de la batería"
+"Se cambiaches o nivel máximo de carga para extender a vida útil da batería"
 
 #: prefs.js:29
 msgid "Hide on battery level above"
-msgstr "Ocultar en el nivel de batería superior a"
+msgstr "Ocultar no nivel de batería superior a"
 
 #: prefs.js:43
 msgid "For laptops often jumping between charging and discharging"
-msgstr "Para portátiles que cambian frecuentemente entre carga y descarga"
+msgstr "Para portátiles que frecuentemente cambian entre cargarse e descargarse"
 
 #: prefs.js:45
 msgid "Hide battery even on discharge if the level is above"
-msgstr "Ocultar la batería incluso al descargarse si la carga es mayor"
+msgstr "Ocultar batería incluso en descarga se o nivel é superior a"
