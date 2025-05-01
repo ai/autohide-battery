@@ -1,5 +1,9 @@
 # Change Log
 
+## 57
+* Added Galician translation (by xuars).
+* Fixed Spanish translation (by xuars).
+
 ## 56
 * Added GNOME 48 support (by Nathaniel Russell).
 * Added Indonesian translation (by Reza Almanda).
