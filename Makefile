@@ -10,3 +10,6 @@ build: clean
 
 local: build
 	gnome-extensions install -f *.zip
+
+debug: local
+	dbus-run-session -- gnome-shell --nested --wayland
