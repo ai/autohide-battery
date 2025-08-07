@@ -1,5 +1,10 @@
 # Change Log
 
+## 58
+* Added GNOME 49 support (by Nathaniel Russell).
+* Fixed German translation.
+* Fixed Belarusian translation.
+
 ## 57
 * Added Galician translation (by xuars).
 * Fixed Spanish translation (by xuars).
