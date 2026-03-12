@@ -39,9 +39,7 @@ export default class AutohideBatteryPreferences extends ExtensionPreferences {
 
     let always = new Adw.SwitchRow({
       active: settings.get_boolean('hide-always'),
-      subtitle: _(
-        'For laptops often jumping between charging and discharging'
-      ),
+      subtitle: _('For laptops often jumping between charging and discharging'),
       title: _('Hide battery even on discharge if the level is above')
     })
     group.add(always)
