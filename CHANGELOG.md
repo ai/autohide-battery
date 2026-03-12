@@ -1,5 +1,9 @@
 # Change Log
 
+## 59
+* Added GNOME 50 support.
+* Updated translations.
+
 ## 58
 * Added GNOME 49 support (by Nathaniel Russell).
 * Fixed German translation.
