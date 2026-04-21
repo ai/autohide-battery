@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-05 17:59-0400\n"
 "PO-Revision-Date: 2020-04-05 16:47-0400\n"
-"Last-Translator: Andrey Sitnik <andrey@sitnik.ru>\n"
+"Last-Translator: Andrey Sitnik <andrey@sitnik.es>\n"
 "Language-Team: none\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -32,4 +32,3 @@ msgstr "Если ноутбук часто переключается между
 #: prefs.js:45
 msgid "Hide battery even on discharge if the level is above"
 msgstr "Скрывать даже при разряде если заряд больше"
-
