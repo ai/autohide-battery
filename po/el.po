@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-01 21:16+0200\n"
+"PO-Revision-Date: 2026-04-28 09:05+0000\n"
+"Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
+"Language-Team: Greek <https://hosted.weblate.org/projects/autohide-battery/"
+"settings/el/>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
+
+#: prefs.js:27
+msgid "If you changed maximum charging level to extend battery life"
+msgstr ""
+"Εάν αλλάξατε το μέγιστο επίπεδο φόρτισης για να παρατείνετε τη διάρκεια ζωής "
+"της μπαταρίας"
+
+#: prefs.js:29
+msgid "Hide on battery level above"
+msgstr "Απόκρυψη όταν το επίπεδο μπαταρίας είναι πάνω από"
+
+#: prefs.js:43
+msgid "For laptops often jumping between charging and discharging"
+msgstr ""
+"Για φορητούς υπολογιστές που συχνά μεταβαίνουν μεταξύ φόρτισης και "
+"αποφόρτισης"
+
+#: prefs.js:45
+msgid "Hide battery even on discharge if the level is above"
+msgstr ""
+"Απόκρυψη μπαταρίας, ακόμα και κατά την αποφόρτιση, αν το επίπεδο είναι πάνω "
+"από"
