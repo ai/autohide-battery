@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 21:16+0200\n"
-"PO-Revision-Date: 2024-12-05 16:53+0000\n"
-"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"PO-Revision-Date: 2026-08-24 15:51+0000\n"
+"Last-Translator: Alagirisamy Rengaraj <radhaalagirisamy@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/autohide-battery/"
 "settings/ta/>\n"
 "Language: ta\n"
@@ -17,21 +17,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 2026.9.dev0\n"
 
 #: prefs.js:27
 msgid "If you changed maximum charging level to extend battery life"
-msgstr "பேட்டரி ஆயுளை நீட்டிக்க அதிகபட்ச சார்சிங் அளவை மாற்றினால்"
+msgstr "மின்கல ஆயுளை நீட்டிக்க நிறைவு மின்னேற்ற அளவை மாற்றினால்"
 
 #: prefs.js:29
 msgid "Hide on battery level above"
-msgstr "மேலே பேட்டரி மட்டத்தில் மறைக்கவும்"
+msgstr "மேலே மின்கல அளவை மறைக்கவும்"
 
 #: prefs.js:43
 msgid "For laptops often jumping between charging and discharging"
 msgstr ""
-"மடிக்கணினிகளுக்கு பெரும்பாலும் சார்ச் செய்வதற்கும் வெளியேற்றுவதற்கும் இடையில் குதிக்கிறது"
+"மடிக்கணினிகளுக்கு அடிக்கடி மின் ஏறுவதற்கும் மற்றும் மின் இறங்குவதற்கும் இடையில் துள்ளுகிறது"
 
 #: prefs.js:45
 msgid "Hide battery even on discharge if the level is above"
-msgstr "நிலை மேலே இருந்தால் கூட வெளியேற்றத்தில் கூட பேட்டரியை மறைக்கவும்"
+msgstr "அளவுக்கு மேலே இருந்தால் மின் இறக்கத்தில் கூட மின்கலத்தை மறைக்கவும்"
