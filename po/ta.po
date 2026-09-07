@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-01 21:16+0200\n"
-"PO-Revision-Date: 2026-09-02 01:51+0000\n"
+"PO-Revision-Date: 2026-09-08 08:51+0000\n"
 "Last-Translator: Alagirisamy Rengaraj <radhaalagirisamy@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/autohide-battery/"
 "settings/ta/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.9.dev0\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: prefs.js:27
 msgid "If you changed maximum charging level to extend battery life"
@@ -29,8 +29,8 @@ msgstr "மேலே மின்கல அளவை மறைக்கவும
 
 #: prefs.js:43
 msgid "For laptops often jumping between charging and discharging"
-msgstr "மடிக்கணினிகளுக்கு,மின் ஏறுவதும்,இறங்குவதும் அடிக்கடி மாறுகிறது"
+msgstr "மடிக்கணினிகளுக்கு,மின் ஏறுவதும்,இறங்குவதும் அடிக்கடி நிகழ்கிறது"
 
 #: prefs.js:45
 msgid "Hide battery even on discharge if the level is above"
-msgstr "மின் இறக்கத்தில் கூட,அளவுக்கு மேலே இருந்தால் மின்கலம் மறைக்கவும்"
+msgstr "அளவு அதிகம் இருந்தால் மின் இறக்கத்தில் கூட,மின்கலத்தை மறை"
