@@ -1,5 +1,10 @@
 # Change Log
 
+## 60
+
+- Added GNOME 51 support.
+- Updated translations.
+
 ## 59
 
 - Added GNOME 50 support.
